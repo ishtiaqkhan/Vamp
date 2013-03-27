@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{1314EB59-7DDA-5928-E464-8601052EAE73}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_3;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Art\AnimationTest.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Not Used\Enemy_Spawner.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Used\Close_Ranged_Enemy.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_BaseClass.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_Projectile.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Used\Far_Ranged_Enemy.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\SpikeDamage.cs" />
+     <Compile Include="Assets\Ish\Script\Other\Fire\Hit.cs" />
+     <Compile Include="Assets\Ish\Script\Other\Gate\DestoryGate.cs" />
+     <Compile Include="Assets\Ish\Script\Other\Gate\WaypointManager.cs" />
+     <Compile Include="Assets\Ish\Script\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Environment\CaveScript.cs" />
+     <Compile Include="Assets\Scripts\Environment\EventScript.cs" />
+     <Compile Include="Assets\Scripts\Environment\LadderScript.cs" />
+     <Compile Include="Assets\Scripts\Environment\Spike.cs" />
+     <Compile Include="Assets\Scripts\Environment\SwtichButton.cs" />
+     <Compile Include="Assets\Scripts\GUIHandler.cs" />
+     <Compile Include="Assets\Scripts\MagicPickup.cs" />
+     <Compile Include="Assets\Scripts\Player\DontGoThroughThings.cs" />
+     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+     <Compile Include="Assets\Scripts\Player\MovementRigid.cs" />
+     <Compile Include="Assets\Scripts\Player\OtherControls.cs" />
+     <Compile Include="Assets\Scripts\Player\Test.cs" />
+     <Compile Include="Assets\Scripts\changeText.cs" />
+     <Compile Include="Assets\Scripts\platformMovement.cs" />
+     <Compile Include="Assets\Scripts\platformScript.cs" />
+     <Compile Include="Assets\Scripts\textScript.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Art\Skybox\Textures\sp3sky.rwx.txt" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{59B28A93-DB94-3568-3CA6-C30DF172551D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{F4CD4478-ACB3-D955-B71E-67A4044F7B3D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
