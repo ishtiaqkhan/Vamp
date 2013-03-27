@@ -4,6 +4,7 @@ using System.Collections;
 //This script is done by Jonthan and Ishtiaq
 public class Player : MonoBehaviour {
 
+    //testing git
   
     private int maxHealth = 100;   
     private int maxMagic = 100;
