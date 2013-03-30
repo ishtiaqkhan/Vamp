@@ -13,7 +13,8 @@ public class Movement :MonoBehaviour {
 	ControllerMovement movement = new ControllerMovement();
 	ControllerJump jump = new ControllerJump(); 
 	ControllerDash dash = new ControllerDash(); 
-	CharacterController controller; 
+	CharacterController controller;
+    AnimationState WalkAnim; 
 	
 	//Respond to input
 	bool canControl = true; 
@@ -56,6 +57,10 @@ public class Movement :MonoBehaviour {
 		movement.direction = transform.TransformDirection(Vector3.forward);
 		controller = GetComponent<CharacterController>(); 
 		//Spawn(); 
+
+        WalkAnim = animation["Walk"]; 
+
+        
 		
 		
 
@@ -220,15 +225,25 @@ public class Movement :MonoBehaviour {
 			
 			movement.hangTime = 0.0f; 
 			
-			jump.jumping = false; 
+			jump.jumping = false;
+            if ( hori > 0.2 || hori < -0.2)
+            {
+                animation.CrossFade("Walk");
+                WalkAnim.wrapMode = WrapMode.Loop;
+            }
+            else
+            {
+                animation.Stop("Walk"); 
+            }
 		}
-		
 		else{
 			// in air controls 
 			movement.hangTime += Time.deltaTime; 
 			if(movement.isMoving)
 				movement.airVelocity += new Vector3(Mathf.Sign(hori), 0 , 0) * Time.deltaTime *
-					movement.inAirContAcceleration; 
+					movement.inAirContAcceleration;
+
+            animation.Stop("Walk"); 
 			
 		}
 	
