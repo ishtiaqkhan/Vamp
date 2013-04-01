@@ -73,7 +73,7 @@ public class Movement :MonoBehaviour {
 		
 		//parSystem.renderer.enabled = false;
 		//emitter.emit = false; 
-		
+		//OIOIOIOIOIO
 		tempGO = GameObject.FindGameObjectWithTag("Player");
 		playerScript = (Player)tempGO.GetComponent("Player");
 	
