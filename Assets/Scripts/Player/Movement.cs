@@ -17,7 +17,7 @@ public class Movement :MonoBehaviour {
     AnimationState WalkAnim; 
 	
 	//Respond to input
-	bool canControl = true; 
+	public bool canControl = true; 
 	
 	// where the player spawns
 	public Transform spawnPoint; 
