@@ -116,7 +116,7 @@ public class Player : MonoBehaviour {
         
     }
 	
-    void KillPlayer()
+  public void KillPlayer()
     {
 		currentHealth = 0; // set health to zero 
         //add code to remove player and make game over screen 

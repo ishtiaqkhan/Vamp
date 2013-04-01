@@ -36,16 +36,17 @@ using System.Collections.Generic;
 //Create the link between the base enemy class and enemy class
 public class Far_Ranged_Enemy : Enemy_BaseClass
 {
-
+	
     public static List<Far_Ranged_Enemy> allFarRangedEnemy = new List<Far_Ranged_Enemy>();//Creating a static array to store all of the far ranged enemies in the world
     public Transform projectile;//The gameobject that is created as the enemys' projectile
     private Transform player2;    //The variable that stores the player game object
-
+	public int RangeInt = 16;
+	
 	//Called once only. This is done when the gameobject is spawned in the game world
     void Awake()
-    {       
+    { 
         player2 = GameObject.FindGameObjectWithTag("Player").transform;//Linking the player gameobject to the player2 gameobject of this script
-        SetUpEnemy(player2, transform.rotation, transform.position, 10, 10, 10, 10, 10, 10, 10, 10, 16, 10, 'R', true); //The first function needed to set up the enemy
+        SetUpEnemy(player2, transform.rotation, transform.position, 10, 10, 10, 10, 10, 10, 10, 10, 3000, 10, 'R', true); //The first function needed to set up the enemy
         StartCoroutine("FireProjectile");//Starting the rountine which fires the projectiles at the player
         allFarRangedEnemy.Add(this);//Adding this gameobject script to the static array
     }
