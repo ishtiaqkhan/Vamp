@@ -58,28 +58,30 @@ public class Far_Ranged_Enemy : Enemy_BaseClass
     // Update is called once per frame
     void Update()
     {
-		//If the position stored in the Postion from the base class is less than the postion of this gameobject then play the run animtaiton
-        if (Position.x < transform.position.x || Position.x > transform.position.x || Position.z < transform.position.z || Position.z > transform.position.z)
-        {
-
-            transform.FindChild("golem").animation.CrossFade("run");
-        }      
-		//If the above if statement is false then do this which is playing the idle animtaiton
-        else
-        {
-            transform.FindChild("golem").animation.CrossFade("idle");
-        }
-
-		//If the postion is greater than the number in the if statement then the enemy can not move
-        if (Position.x >= -35.18421)
-        {
-            Move = false;
-        }
-		//If the player position is less than the number in the if statement then the enemy can move
-        if (player2.position.x <= -35.18421)
-        {
-            Move = true;
-        }
+		Move = false;
+		
+//		//If the position stored in the Postion from the base class is less than the postion of this gameobject then play the run animtaiton
+//        if (Position.x < transform.position.x || Position.x > transform.position.x || Position.z < transform.position.z || Position.z > transform.position.z)
+//        {
+//
+//            transform.FindChild("golem").animation.CrossFade("run");
+//        }      
+//		//If the above if statement is false then do this which is playing the idle animtaiton
+//        else
+//        {
+//            transform.FindChild("golem").animation.CrossFade("idle");
+//        }
+//
+//		//If the postion is greater than the number in the if statement then the enemy can not move
+//        if (Position.x >= -35.18421)
+//        {
+//            Move = false;
+//        }
+//		//If the player position is less than the number in the if statement then the enemy can move
+//        if (player2.position.x <= -35.18421)
+//        {
+//            Move = true;
+//        }
 
 		//If the enemy health is 0 then play the death animtation
         if (Health <= 0)
@@ -125,8 +127,9 @@ public class Far_Ranged_Enemy : Enemy_BaseClass
 				//if the difference between the player's postion and this postion is then the attack range the fire the projectile
                 if (Vector3.Distance(Player.position, Position) < AttackRange)
                 {           			
+					transform.FindChild("golem").transform.LookAt(player2);
                     transform.FindChild("golem").animation.Play("punch");		//Play the punch animation of the enemy
-                    Transform newBall = Instantiate(projectile, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as Transform;//Create the projectile as a transform
+                    Transform newBall = Instantiate(projectile, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity) as Transform;//Create the projectile as a transform
 					newBall.LookAt(player2);//make the proejctile look at the player
 					newBall.rigidbody.AddForce(newBall.transform.forward * 1000);   //move the projectile forward by a force so it slows down                 
                 }
