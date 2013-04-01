@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GUIHandler : MonoBehaviour {
 
+    //testing sending files to ish
+
     private Player player;
     private GameObject tempGO;
     private float healthBarLength;
