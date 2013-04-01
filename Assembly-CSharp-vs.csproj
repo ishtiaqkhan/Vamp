@@ -50,10 +50,12 @@
      <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_BaseClass.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_Projectile.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Far_Ranged_Enemy.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\Bridge\BreakPlanks.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\Fire\Hit.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\Gate\DestoryGate.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\Gate\WaypointManager.cs" />
      <Compile Include="Assets\Ish\Script\Environment\SpikeDamage.cs" />
-     <Compile Include="Assets\Ish\Script\Other\Fire\Hit.cs" />
-     <Compile Include="Assets\Ish\Script\Other\Gate\DestoryGate.cs" />
-     <Compile Include="Assets\Ish\Script\Other\Gate\WaypointManager.cs" />
+     <Compile Include="Assets\Ish\Script\Other\InstantDeath.cs" />
      <Compile Include="Assets\Ish\Script\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Environment\CaveScript.cs" />
      <Compile Include="Assets\Scripts\Environment\EventScript.cs" />
