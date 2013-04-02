@@ -22,10 +22,11 @@ public class platformScript : MonoBehaviour {
 	public float maxRDistance;
 	public float maxUDistance;
 	public float maxDDistance;
+	public bool AttackEffect = true;
 	
 	// Use this for initialization
 	void Start () {
-		
+	
 		playerOn = false;
 		switch(type)
 		{
@@ -44,13 +45,21 @@ public class platformScript : MonoBehaviour {
 				break;
 		}
 			pos = gameObject.transform.position;
-		
+	
+		if(AttackEffect == false)
+		{
+			rigidbody.isKinematic = true;		
+		}
+		else
+		{
+			rigidbody.isKinematic = false;		
+		}		
 	}
 	
 	void OnTriggerEnter(Collider col)
 	{
 		
-		if(col.gameObject.name == "Player")
+		if(col.tag == "Player")
 		{
 			playerOn = true;
 		}
@@ -60,7 +69,7 @@ public class platformScript : MonoBehaviour {
 	void OnTriggerExit(Collider col)
 	{
 		
-		if(col.gameObject.name == "Player")
+		if(col.tag == "Player")
 		{
 			playerOn = false;
 			switch(type)
@@ -72,9 +81,16 @@ public class platformScript : MonoBehaviour {
 				break;
 			}
 		}
-		
-		
 	}
+		
+	void OnCollisionEnter(Collision collision)
+	{
+		if(collision.gameObject.tag != "Projectile")
+		{
+			Destroy(gameObject);		
+		}
+	}	
+	
 	//method for moving the platform downward
 	void Down()
 	{
@@ -127,7 +143,7 @@ public class platformScript : MonoBehaviour {
 						
 						Drop();
 						if(timer<-15)
-							Destroy(gameObject);
+							Destroy(gameObject);					
 					}
 				}
 				break;

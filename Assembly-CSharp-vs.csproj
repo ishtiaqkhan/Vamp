@@ -55,6 +55,7 @@
      <Compile Include="Assets\Ish\Script\Environment\Gate\DestoryGate.cs" />
      <Compile Include="Assets\Ish\Script\Environment\Gate\WaypointManager.cs" />
      <Compile Include="Assets\Ish\Script\Environment\SpikeDamage.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\Switch\SwtichPuzzle1.cs" />
      <Compile Include="Assets\Ish\Script\Other\CutScene.cs" />
      <Compile Include="Assets\Ish\Script\Other\InstantDeath.cs" />
      <Compile Include="Assets\Ish\Script\Player\Player.cs" />

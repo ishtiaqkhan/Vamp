@@ -39,7 +39,7 @@ public class Close_Ranged_Enemy : Enemy_BaseClass
     public static List<Close_Ranged_Enemy> allCloseRangedEnemy = new List<Close_Ranged_Enemy>();//A static list to store all of the close range enemy in the world    
     private Transform player2; //The variable that stores the player game object
     private bool attack = false;//The cooldown for the attack that the enemy does
-
+	
 	//Done only once. When the gameobject is created this is called
     void Awake()    {
      
