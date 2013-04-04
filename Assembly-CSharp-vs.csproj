@@ -45,8 +45,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Art\AnimationTest.cs" />
-     <Compile Include="Assets\Ish\Script\BossSpawner.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Not Used\Enemy_Spawner.cs" />
+     <Compile Include="Assets\Ish\Script\Enemy\Used\Boss.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Close_Ranged_Enemy.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_BaseClass.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_Projectile.cs" />

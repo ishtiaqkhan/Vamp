@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class TriggerWall : MonoBehaviour {
-	
+
 	private WallDissolving wd;
 	private GameObject shell;//The gameobject used to link the scripts of the enemy and player 
 	private SmoothFollow sf;
