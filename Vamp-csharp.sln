@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{B9147E4F-1B04-9994-EBC1-7D37BAFAA2E9}") = "Vamp", "Assembly-CSharp-vs.csproj", "{1314EB59-7DDA-5928-E464-8601052EAE73}"
 EndProject
-Project("{B9147E4F-1B04-9994-EBC1-7D37BAFAA2E9}") = "Vamp", "Assembly-CSharp-Editor-firstpass-vs.csproj", "{50C82CA2-7C05-CABB-A5BE-51BB7B83071D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,15 +13,11 @@ Global
 		{1314EB59-7DDA-5928-E464-8601052EAE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1314EB59-7DDA-5928-E464-8601052EAE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1314EB59-7DDA-5928-E464-8601052EAE73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50C82CA2-7C05-CABB-A5BE-51BB7B83071D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50C82CA2-7C05-CABB-A5BE-51BB7B83071D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50C82CA2-7C05-CABB-A5BE-51BB7B83071D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50C82CA2-7C05-CABB-A5BE-51BB7B83071D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																																GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
