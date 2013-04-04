@@ -52,11 +52,10 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Art\Skybox\Textures\sp3sky.rwx.txt" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Ish\Shaders\Dissolve.shader" />
+     <None Include="Assets\Ish\Shaders\Emissive Colour.shader" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{59B28A93-DB94-3568-3CA6-C30DF172551D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{F4CD4478-ACB3-D955-B71E-67A4044F7B3D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>

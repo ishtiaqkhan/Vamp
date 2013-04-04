@@ -90,7 +90,22 @@ public class Player : MonoBehaviour {
         if (maxHealth < 1)
             maxHealth = 1;        
     }
+	
+     public void AdjustCurrentHealth2 (int adj)
+    {
 
+       
+        currentHealth += adj;
+
+        healthBarLength = (Screen.width / 2) * (currentHealth / (float)maxHealth);
+  		
+
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+
+        if (maxHealth < 1)
+            maxHealth = 1;        
+    }
     public void AdjustCurrentMagic(int adj)
     {
 

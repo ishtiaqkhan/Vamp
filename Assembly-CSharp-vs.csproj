@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Art\AnimationTest.cs" />
+     <Compile Include="Assets\Ish\Script\BossSpawner.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Not Used\Enemy_Spawner.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Close_Ranged_Enemy.cs" />
      <Compile Include="Assets\Ish\Script\Enemy\Used\Enemy_BaseClass.cs" />
@@ -56,7 +57,10 @@
      <Compile Include="Assets\Ish\Script\Environment\Gate\WaypointManager.cs" />
      <Compile Include="Assets\Ish\Script\Environment\SpikeDamage.cs" />
      <Compile Include="Assets\Ish\Script\Environment\Switch\SwtichPuzzle1.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\TriggerWall.cs" />
+     <Compile Include="Assets\Ish\Script\Environment\WallDissolving.cs" />
      <Compile Include="Assets\Ish\Script\Other\CutScene.cs" />
+     <Compile Include="Assets\Ish\Script\Other\HealthPowerUp.cs" />
      <Compile Include="Assets\Ish\Script\Other\InstantDeath.cs" />
      <Compile Include="Assets\Ish\Script\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Environment\CaveScript.cs" />
@@ -78,14 +82,11 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Art\Skybox\Textures\sp3sky.rwx.txt" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Ish\Shaders\Dissolve.shader" />
+     <None Include="Assets\Ish\Shaders\Emissive Colour.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{59B28A93-DB94-3568-3CA6-C30DF172551D}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
